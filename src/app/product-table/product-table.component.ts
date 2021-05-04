@@ -13,6 +13,7 @@ import {
     SimpleChange,
     SimpleChanges
 } from '@angular/core';
+import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from 'constants';
 
 @Component({
     selector: 'product-table',
@@ -102,6 +103,7 @@ export class ProductTableComponent implements OnInit, OnChanges {
         this.discount = null;
         this.total = null;
         this.items.length = 0;
+        this.totalItem = 0;
     }
 
 }
